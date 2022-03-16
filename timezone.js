@@ -1,3 +1,6 @@
+axios.defaults.headers.post['permissions-policy'] = 'interest-cohort=()';
+
+
 axios.get('https://hex-escape-room.herokuapp.com/api/news/v1/data')
 .then((res) => {
     let data = res.data.articles;
